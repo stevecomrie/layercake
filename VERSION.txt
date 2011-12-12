@@ -1,1 +1,1 @@
-LayerCake plugin version 0.01
+LayerCake plugin version 0.02

@@ -16,7 +16,7 @@ Install:
 
      CakePlugin::load( 'LayerCake' => array( 'routes' => true ) );
 
-  3. Add the LayerCake/db/layercake_clean.sql to your database.
+  3. Add LayerCake/Config/Schema/layercake.sql to your database
 
   4. Run the console shell to create your admin user:
 

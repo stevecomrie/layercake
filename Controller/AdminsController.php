@@ -1,9 +1,12 @@
-<?
-
+<?php
+App::uses('LayerCakeAppController', 'LayerCake.Controller');
+/**
+ * Admins Controller
+ *
+ */
 class AdminsController extends LayerCakeAppController {
 
-	var $name       = 'Admins';
-	var $helpers    = array( 'Html', 'Form' );    
+    var $uses = array( 'LayerCake.Admin' );
 	
 	function beforeFilter() {
 		parent::beforeFilter( );
@@ -63,7 +66,7 @@ class AdminsController extends LayerCakeAppController {
                 $email->to($admin['Admin']['email']);
                 $email->subject('Password Reset');
                 $email->emailFormat( 'both' );
-                $email->template( 'password_reset', 'default' );
+                $email->template( 'LayerCake.password_reset', 'LayerCake.default' );
                 $email->viewVars( array(
                     'from'  => $email_from,
                     'admin' => $admin,
@@ -95,20 +98,21 @@ class AdminsController extends LayerCakeAppController {
         
         if( ( !$id && empty($this->data) ) || $id != $admin['id'] ) {
             $this->Session->setFlash( 'Invalid Admin', 'default', array('class' => 'error') );
-			$this->redirect( "/admin/dashboard/" );
+			$this->redirect( "/admin/dashboards" );
 		}
         
 		if( !empty($this->data) ) {
 			if ($this->Admin->save( $this->data )) {
                 $this->Session->setFlash( 'The Admin has been saved', 'default', array('class' => 'success') );
-				$this->redirect( "/admin/dashboard/" );
+				$this->redirect( "/admin/dashboards" );
 			} else {
                 $this->Session->setFlash( 'The Admin could not be saved. Please, try again.', 'default', array('class' => 'error') );
 			}
 		}
         
 		if( empty($this->data) ) {
-			$this->data = $this->Admin->read( null, $id );
+			$this->data = $this->Admin->find( 'first', array( 'conditions' => array( 'id' => $id ) ) );
 		}
 	}
+
 }

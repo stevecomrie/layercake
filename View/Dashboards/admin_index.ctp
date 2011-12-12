@@ -22,12 +22,12 @@
 <h1>Dashboard</h1>
 
 <ul id="dashboard" class="box">
-    <? $modules = Cache::read( 'LayerCake.admin_modules' );
+    <?php $modules = Cache::read( 'LayerCake.admin_modules' );
         foreach ( $modules AS $module ): ?>
-            <li onclick="location.href=('<?=$module['AdminModule']['link'];?>')"><p><img src="/layer_cake/images/<?=$module['AdminModule']['icon'];?>" alt="" /></p><h2><a href="<?=$module['AdminModule']['link'];?>"><?=$module['AdminModule']['name'];?></a></h2></li>
+            <li onclick="location.href=('<?php echo$module['AdminModule']['link'];?>')"><p><img src="/layer_cake/images/<?php echo$module['AdminModule']['icon'];?>" alt="" /></p><h2><a href="<?php echo$module['AdminModule']['link'];?>"><?php echo$module['AdminModule']['name'];?></a></h2></li>
             
-            <? foreach ( $module['children'] AS $child ): ?>
-                <li onclick="location.href=('<?=$child['AdminModule']['link'];?>')"><p><img src="/layer_cake/images/<?=$child['AdminModule']['icon'];?>" alt="" /></p><h2><a href="<?=$child['AdminModule']['link'];?>"><?=$child['AdminModule']['name'];?></a></h2></li>
-            <? endforeach; ?>
-    <?  endforeach; ?>
+            <?php foreach ( $module['children'] AS $child ): ?>
+                <li onclick="location.href=('<?php echo$child['AdminModule']['link'];?>')"><p><img src="/layer_cake/images/<?php echo$child['AdminModule']['icon'];?>" alt="" /></p><h2><a href="<?php echo$child['AdminModule']['link'];?>"><?php echo$child['AdminModule']['name'];?></a></h2></li>
+            <?php endforeach; ?>
+    <?php  endforeach; ?>
 </ul>

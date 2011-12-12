@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-    <?
+    <?php
         echo $this->Html->charset();
         echo $this->Html->tag( "title", $title_for_layout . " | LayerCake Admin Panel" );
         
@@ -29,9 +29,9 @@
         <!-- Header -->
         <div id="header">
             <div class="box">
-                <p id="logo"><a href="/admin/dashboard" title="Dashboard / Home"><img src="/layer_cake/skin/logo.png" alt="LayerCake Administrative Panel" /></a></p>
+                <p id="logo"><a href="/admin/dashboards" title="Dashboard / Home"><img src="/layer_cake/skin/logo.png" alt="LayerCake Administrative Panel" /></a></p>
                 <hr class="noscreen" />
-                <? echo $this->element( "navigation", array( "active" => "home", "plugin" => "admin" )); ?>
+                <?php echo $this->element( "navigation", array( "active" => "home", "plugin" => "admin" )); ?>
             </div>
         </div>
     
@@ -40,14 +40,14 @@
         <!-- Content -->
         <div id="content" class="box">
             <!-- Status Message -->
-            <?= $this->Session->flash(); ?>
+            <?php echo $this->Session->flash(); ?>
         
             <div class="box">
                 <!-- Search Box -->
-                <?= $this->element( "search_form", array( "plugin" => "admin" ) ); ?>
+                <?php echo $this->element( "search_form", array( "plugin" => "admin" ) ); ?>
                        
                 <!-- Content -->
-                <?= $content_for_layout; ?>
+                <?php echo $content_for_layout; ?>
             </div>
         </div>
     

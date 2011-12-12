@@ -1,4 +1,4 @@
-<?
+<?php
     // try to read the navigation
     $navigation = Cache::read( 'LayerCake.admin_navigation' );
 
@@ -24,7 +24,7 @@
 ?>
 
 <!-- Dropdown Menu -->
-<?= $navigation; ?>
+<?php echo $navigation; ?>
 
 <!-- User Menu -->
 <ul id="user">

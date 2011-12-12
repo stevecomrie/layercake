@@ -1,13 +1,47 @@
-<?
+<?php
+App::uses('LayerCakeAppModel', 'LayerCake.Model');
+/**
+ * Admin Model
+ *
+ */
 class Admin extends LayerCakeAppModel {
-
-	var $name = 'Admin';
-	var $validate = array(
-		'username' => array('notempty'),
-		'password' => array('notempty'),
-		'email'    => array('email')
+/**
+ * Validation rules
+ *
+ * @var array
+ */
+	public $validate = array(
+		'username' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'name' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'email' => array(
+			'email' => array(
+				'rule' => array('email'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 	);
-    
     
     function beforeValidate() {
         
@@ -39,15 +73,15 @@ class Admin extends LayerCakeAppModel {
     function beforeSave() {
         
         // if there's a new password, hash it, before saving it
-        if (isset($this->data['Admin']['new_password_1'])) {
+        if( isset($this->data['Admin']['new_password_1']) ) {
             $this->data['Admin']['password'] = Security::hash( $this->data['Admin']['new_password_1'], null, true );
         }
         
         // if there's a new password, hash it, before saving it
-        if (isset($this->data['Admin']['new_password'])) {
+        if( isset($this->data['Admin']['new_password']) ) {
             $this->data['Admin']['password'] = Security::hash( $this->data['Admin']['new_password'], null, true );
-        }        
+        }
         
         return true;
-    }   
+    }
 }

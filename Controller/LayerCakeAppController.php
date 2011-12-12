@@ -2,7 +2,7 @@
 
 class LayerCakeAppController extends AppController {
 
-	var $helpers    = array( 'Html', 'Form', 'Session', 'LayerCake.Cycle', 'LayerCake.MenuTree' );
+	var $helpers    = array( 'Html', 'Form', 'Session', 'LayerCake.MenuTree' );
     var $components = array( 'Session', 'Auth' );
 	
 	function beforeFilter() {
@@ -16,7 +16,7 @@ class LayerCakeAppController extends AppController {
         );
         
 		$this->Auth->loginAction    = '/admin/admins/login';
-        $this->Auth->loginRedirect  = '/admin/dashboard';
+        $this->Auth->loginRedirect  = '/admin/dashboards';
 		$this->Auth->logoutRedirect = '/admin/admins/login';
 		
 		if( isset( $this->params['prefix'] ) && $this->params['prefix'] == 'admin' ) {
@@ -24,3 +24,4 @@ class LayerCakeAppController extends AppController {
         }
     }
 }
+

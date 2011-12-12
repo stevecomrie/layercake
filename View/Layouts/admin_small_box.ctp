@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <?
+    <?php
         echo $this->Html->charset();
         echo $this->Html->tag( "title", $title_for_layout . " | LayerCake Admin Panel" );
         
@@ -32,11 +32,11 @@
         <!-- Content -->
         <div id="content">
             <!-- Status Message -->
-            <?= $this->Session->flash(); ?>
-            <?= $this->Session->flash( 'auth' ); ?>
+            <?php echo $this->Session->flash(); ?>
+            <?php echo $this->Session->flash( 'auth' ); ?>
             
             <!-- Content -->
-            <?= $content_for_layout; ?>
+            <?php echo $content_for_layout; ?>
         </div>
     </div>
 </body>
