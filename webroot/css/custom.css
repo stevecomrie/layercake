@@ -1,0 +1,187 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    AdminSquare (www.adminsquare.com)
+
+    File:       custom.css
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Place for your own CSS code */
+#content #search {
+    top         : -15px;
+    right       : 0px;
+}
+
+div.box {
+    width       : 964px;
+    margin      : 0 auto;
+    position    : relative;    
+}
+
+#content ul#dashboard {
+    margin      : -5px -10px 20px -4px;
+}
+
+div#footer {
+    margin  : 50px 0 0 0;
+}
+
+body#sign div#main {
+    width       : 450px;
+    min-width   : 450px;
+}
+
+body#sign div#footer {
+    margin  : 0 0 15px 0;
+}
+
+#content form {
+    margin  : 0px;
+}
+
+#content form label {
+    display: block;
+    float: none;
+    width: auto;
+    font-weight : bold;
+}
+
+#content form div.checkbox input[type=checkbox] {
+    float: left;
+}
+
+#content form div.checkbox label {
+    display: inline;
+    margin: 0 0 0 6px;
+    float: left;
+    width: auto;
+    font-weight : bold;
+    font-size   : 13px;
+    line-height : 13px;
+}
+
+
+#content form input[type=text],
+#content form input[type=password],
+#content form select,
+#content select.input-text {
+    background      : none repeat scroll 0 0 #FFFFFF;
+    border-color    : #B7B7B7 #E3E3E3 #E8E8E8 #B7B7B7;
+    border-style    : solid;
+    border-width    : 1px;
+    font-size       : 14px;
+    padding         : 5px;
+}
+
+#content div.input {
+    margin          : 0 0 18px 0;
+}
+
+#content div.input input[type=text],
+#content div.input input[type=password],
+#content div.input textarea {
+    width           : 97%
+}
+
+#content form textarea {
+    background      : none repeat scroll 0 0 #FFFFFF;
+    border-color    : #B7B7B7 #E3E3E3 #E8E8E8 #B7B7B7;
+    border-style    : solid;
+    border-width    : 1px;
+    font-size       : 14px;
+    padding         : 5px;
+}
+
+#content form input[type=submit],
+#content a.button,
+#content button,
+div.submit input {
+    -moz-border-radius  : 4px 4px 4px 4px;
+    -moz-box-shadow     : 0 1px 3px #CCCCCC;
+    background          : url("/img/temp/big-button-overlay.png") repeat-x scroll left top #F6F6F6;
+    border-bottom       : 1px solid #B8B8B8;
+    border-right        : 1px solid #B7B7B7;
+    color               : #858585;
+    cursor              : pointer;
+    display             : inline-block;
+    font-family         : Arial,sans-serif;
+    font-size           : 14px;
+    font-weight         : bold;
+    line-height         : 1;
+    padding             : 5px 15px;
+    position            : relative;
+    text-decoration     : none !important;
+}
+
+#content a.button {
+    padding         : 10px 15px;
+    margin-right    : 10px;
+}
+
+div.submit {
+    float               : left;
+    margin              : 10px 20px 0 0;
+}
+
+#content p.spacer,
+#content p.cancel {
+    color               : #999;
+    font-size           : 14px;
+    float               : left;
+    margin              : 14px 15px 0 0;
+}
+
+#content p.cancel a {
+    color               : red;
+}
+
+#content form .form-left {
+    float               : left;
+    width               : 48%;
+}
+
+#content form .form-right {
+    float               : right;
+    width               : 48%;
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+/* simple colors */
+/*****************/
+.blue { color: #0067E3; }
+
+
+/* flash boxes */
+/***************/
+#flashMessage, #authMessage {
+    border              : 2px solid;
+    margin-bottom       : 20px;
+    padding             : 15px 10px 15px 50px;
+    background-repeat   : no-repeat;
+    background-position : 10px center;
+}
+
+#flashMessage.message, #authMessage.message {
+    color           : #00529B;
+    background-color: #BDE5F8;
+    background-image: url('/layer_cake/images/ico-info.png');
+}
+
+#flashMessage.success, #authMessage.success {
+    color           : #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('/layer_cake/images/ico-ok.png');
+}
+
+#flashMessage.warning, #authMessage.warning {
+    color           : #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('/layer_cake/images/ico-warning.png');
+}
+
+#flashMessage.error, #authMessage.error {
+    color           : #D8000C;
+    background-color: #FFBABA;
+    background-image: url('/layer_cake/images/ico-error.png');
+}

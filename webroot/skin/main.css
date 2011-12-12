@@ -1,0 +1,177 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    AdminSquare (www.adminsquare.com)
+
+    Skin:       Default
+    File:       main.css
+    Version:    1.40
+    Updated:    2010-04-01
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body {background-color:#FFF; color:#000;}
+a {color:#0067E3;}
+a:hover {color:#000;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header {background-color:#000}
+#header ul#nav li a {color:#fff;}
+#header ul#nav li.hover, #header ul#nav li:hover {background-color:#0067E3;}
+#header ul#nav ul li {background-color:#0067E3; border-bottom:1px solid #3F8FF0;}
+#header ul#nav ul li:hover {background-color:#004FBE;}
+#header ul#nav ul ul {border-left:1px solid #3F8FF0;}
+#header ul#user li a {color:#AAA;}
+#header ul#user li a:hover {color:#FFF;}
+#footer {border-top:1px solid #DDD; color:#777;}
+#footer a {color:#777;}
+#footer a:hover {color:#333;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+table.table-01 th {border:1px solid #B2D5FF; border-bottom:2px solid #B2D5FF; background-color:#FFF;}
+table.table-01 td {border:1px solid #B2D5FF;}
+table.table-01 tr.even td {background-color:#E6F1FF;}
+dl.dl-01 dt {color:#0067E3;}
+dl.dl-01 dd {color:#555;}
+dl.dl-02 dt {color:#0067E3;}
+dl.dl-02 dd {border-bottom:1px solid #DDD; color:#777;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+FORMS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content fieldset {border:1px solid #B2D5FF; background-color:#E6F1FF;}
+#content .buttons {border:1px solid #BBB; background-color:#F0F0F0;}
+#content .input-text {border:1px solid #BBB; border-top:1px solid #999; border-left:1px solid #999;}
+#content .error {color:#D00;}
+#content .error input, #content .error select, #content .error textarea {border:1px solid #D00;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: DASHBOARD
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content ul#dashboard li {border:1px solid #CCC; border-right:1px solid #BBB; border-bottom:1px solid #BBB; background-color:#FFF;}
+#content ul#dashboard li h2 {border-top:1px solid #DDD;}
+#content ul#dashboard li a {color:#000;}
+#content ul#dashboard li:hover a {color:#0067E3;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: PHOTOGALLERY
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CALENDAR (TABLE)
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.calendar {border:2px solid #BBB;}
+#content table.calendar th {border:1px solid #BBB; background-color:#F5F5F5;}
+#content table.calendar td {border:1px solid #CCC;}
+#content table.calendar td.weekend {background-color:#FFC;}
+#content .color-red {color:#DD0000;}
+#content .color-yellow {color:#FF9900;}
+#content .color-green {color:#55AA00;}
+#content .color-blue {color:#0055CC;}
+#content .color-purple {color:#8800CC;}
+#content .color-black {color:#000;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CALENDAR (LIST)
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.calendar-02 {border:2px solid #BBB;}
+#content table.calendar-02 th {border:1px solid #BBB; background-color:#F0F0F0;}
+#content table.calendar-02 td {border-bottom:1px solid #CCC;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CATEGORY
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.list {border:2px solid #BBB;}
+#content table.list th {border:1px solid #BBB; background-color:#F0F0F0;}
+#content table.list td {border:1px solid #CCC;}
+#content table.list tr.bg td {background:#E6F1FF;}
+#content table.list tr:hover td {background:#FFA;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: MAILBOX
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content #mail-aside ul li.active a {border:1px solid #B2D5FF; border-right:1px solid #E6F1FF; background-color:#E6F1FF; color:#000;}
+#content #mail-content {border:1px solid #B2D5FF; background-color:#E6F1FF;}
+#content #mail-content .mail-tray {border:1px solid #B2D5FF; background-color:#FFF;}
+#content #mail-content .mail-list {border:3px solid #B2D5FF;}
+#content #mail-content .mail-list tr {border-bottom:1px solid #B2D5FF;}
+#content #mail-content .mail-list td {background-color:#FFF;}
+#content #mail-content .mail-list td a {color:#000;}
+#content #mail-content .mail-list td .mail-preview {color:#777;}
+#content #mail-content .mail-list tr.unread td {background-color:#FFB;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: LOGIN
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#sign {background:#F5F5F5;}
+#sign #main {border:1px solid #BBB; background-color:#FFF;}
+#content #login, #content #reg, #content #password {border:1px solid #B2D5FF; background-color:#E6F1FF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: MESSAGES
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .msg a {color:#000;}
+#content .msg a:hover {background-color:#000; color:#FFF;}
+#content .msg.msg-warning {border:1px solid #DDA; background-color:#FFA;}
+#content .msg.msg-ok {border:1px solid #ADD42C; background-color:#E2F6A4;}
+#content .msg.msg-error {border:1px solid #FEBE5F; background-color:#FFE1B5;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: PAGINATION
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .pagination {border-bottom:1px solid #DDD;}
+#content .pagination.bottom {border-top:1px solid #DDD;}
+#content .pagination p.f-right a.active {background-color:#D00; color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: LABELS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.label.label-red {background-color:#DD0000; color:#FFF;}
+.label.label-yellow {background-color:#FF9900; color:#FFF;}
+.label.label-green {background-color:#55AA00; color:#FFF;}
+.label.label-blue {background-color:#0055CC; color:#FFF;}
+.label.label-purple {background-color:#8800CC; color:#FFF;}
+.label.label-black {background-color:#000; color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: BOX
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .box-01 {border:1px solid #B2D5FF; background-color:#E6F1FF;}
+#content .box-01 h3 {background-color:#B2D5FF; color:#000;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TABS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .ui-tabs .ui-tabs-nav {border-bottom:2px solid #000;}
+#content .ui-tabs .ui-tabs-nav li a {background-color:#F0F0F0;}
+#content .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {background-color:#000; color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TOOLTIP
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#tooltipcontent {background-color:#333; color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+OTHERS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.low, .low a {color:#777;}
+.low a:hover {color:#333;}

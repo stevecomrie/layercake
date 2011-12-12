@@ -1,0 +1,232 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    AdminSquare (www.adminsquare.com)
+
+    File:       main.css
+    Version:    1.40
+    Updated:    2010-04-01
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body {font:0.8em/1.5 "arial", sans-serif;}
+address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, ol, p, table, ul {margin:15px 0;}
+a:hover {outline:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#main {min-width:960px;}
+#header {position:relative; height:50px; padding:0 25px; background:url("/layer_cake/skin/header.gif") 0 0 repeat-x; z-index:999;}
+#header p, #header ul {margin:0;}
+#header #logo {float:left;}
+#header #logo img {display:block;}
+#header ul#nav {position:relative; float:left; margin:10px 0 0 30px;}
+#header ul#nav li {float:left; zoom:1;}
+#header ul#nav li a {display:block; padding:5px 10px; font-weight:bold; text-decoration:none;}
+#header ul#nav li a.dropdown {padding-left:15px; background:url("/layer_cake/skin/dropdown.gif") 5px 50% no-repeat;}
+#header ul#nav li.hover, #header ul#nav li:hover {position:relative;}
+#header ul#nav ul {width:220px; visibility:hidden; position:absolute; top:100%; left:0;}
+#header ul#nav ul li {float:none;}
+#header ul#nav ul li a {display:inline-block; width:100%; font-weight:normal;}
+#header ul#nav ul ul {left:100%; top:0;}
+#header ul#nav li:hover > ul {visibility:visible;}
+#header ul#user {float:right; margin-top:12px;}
+#header ul#user li {display:inline;}
+#header ul#user li a {display:block; float:left; margin-left:15px;}
+#content {position:relative; padding:25px; overflow:hidden;}
+#content #search {position:absolute; top:15px; right:25px; margin:0;}
+#content .cols {position:relative; background:url("/layer_cake/skin/cols.gif") 155px 0 repeat-y;}
+#content .cols-aside {float:left; width:140px; padding-right:35px;}
+#content .cols-content {overflow:hidden;}
+#footer {padding:15px 25px;}
+#footer p {margin:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+h1 {margin-top:0; padding-bottom:5px; background:url("/layer_cake/skin/dot.gif") 0 100% repeat-x; font:bold 280%/1 "arial",sans-serif; letter-spacing:-1px;} h1 a {text-decoration:none;}
+h2 {padding-bottom:5px; background:url("/layer_cake/skin/dot.gif") 0 100% repeat-x; font:bold 200%/1 "arial",sans-serif; letter-spacing:-1px;}
+h3 {font-size:120%; font-weight:bold;}
+h4, h5, h6 {font-size:100%; font-weight:bold;}
+table.table-01 th {padding:8px 5px; text-align:center; font-weight:bold;}
+table.table-01 td {padding:6px 5px;}
+ul.ul-01 li {padding-left:15px; background:url("/layer_cake/skin/ul-01.gif") 0 5px no-repeat;}
+ul.ul-01 ul {margin:0 0 0 20px;}
+ul.ul-01 ul li {background:url("/layer_cake/skin/ul-01-ul.gif") 0 5px no-repeat;}
+dl.dl-01 dt {font-weight:bold;}
+dl.dl-01 dd {margin-left:15px;}
+dl.dl-02 dt {padding-top:3px; font-weight:normal;}
+dl.dl-02 dd {margin:0; padding-bottom:3px;}
+#content .col-50 {float:left; width:49%;}
+#content .col-33 {float:left; width:32%;}
+#content .col-33.center {margin:0 2%;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+FORMS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content form {margin:15px 0;}
+#content form table {margin:0;}
+#content form table th, #content form td {padding:2px 0;}
+#content form table th {vertical-align:top; padding-right:10px;}
+#content fieldset {padding:15px;}
+#content fieldset legend {font-size:120%; font-weight:bold;}
+#content .input-text {padding:3px;}
+#content select.input-text {padding:2px;}
+#content .input-submit {padding:1px;}
+#content .input-submit-02 {padding:5px; font-weight:bold;}
+#content .buttons {padding:10px;}
+#content .buttons p {margin:0;}
+#content .req {font-weight:bold;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: DASHBOARD
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content ul#dashboard {margin:-5px 0 20px -5px;}
+#content ul#dashboard li {display:block; float:left; width:130px; margin:5px; padding:10px; background:url("/layer_cake/skin/dashboard.gif") 0 1px repeat-x; text-align:center; cursor:pointer;}
+#content ul#dashboard li p, #content ul#dashboard li h2 {margin:0;}
+#content ul#dashboard li p {margin-bottom:10px;}
+#content ul#dashboard li h2 {padding-top:7px; background:none; font-size:140%; font-weight:normal; line-height:1; letter-spacing:0;}
+#content ul#dashboard li a {text-decoration:none;}
+#content ul.stat li {display:block; float:left; width:135px; padding:0 10px; background:url("/layer_cake/skin/dot.gif") 100% 0 repeat-y;}
+#content ul.stat li h3 {margin:0; font-size:180%;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: PHOTOGALLERY
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content ul.photos {margin:15px 0 15px -5px;}
+#content ul.photos li {display:block; position:relative; float:left; margin:5px; width:180px;}
+#content ul.photos li .photo-edit {position:absolute; bottom:0; right:25px;}
+#content ul.photos li .photo-delete {position:absolute; bottom:0; right:0;}
+#content ul.photos li img {display:block;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CALENDAR (TABLE)
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.calendar {width:100%;}
+#content table.calendar th {width:14.28%; padding:10px; text-align:center; font-size:120%;}
+#content table.calendar td {padding:25px 10px;}
+#content table.calendar td .day {text-align:center; font-size:200%;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CALENDAR (LIST)
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.calendar-02 {width:100%;}
+#content table.calendar-02 th, #content table.calendar-02 td {padding:10px;}
+#content table.calendar-02 th {width:100px; font-size:160%; text-align:center;}
+#content table.calendar-02 td ul {margin:0; list-style:none;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: CATEGORY
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content table.list {width:100%;}
+#content table.list th {padding:10px; font-size:120%;}
+#content table.list td {padding:5px 10px;}
+#content table.list td.icons img {position:relative; top:3px;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: MAILBOX
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content #mail-cols {position:relative; margin:10px 0;}
+#content #mail-aside {float:left; width:130px; margin-right:-1px;}
+#content #mail-aside ul {margin:0;}
+#content #mail-aside ul li {display:inline;}
+#content #mail-aside ul li a {display:block; padding:2px 5px;}
+#content #mail-aside ul li.active a {padding:5px; text-decoration:none; font-weight:bold;}
+#content #mail-content {padding:5px; overflow:hidden;}
+#content #mail-content .mail-tray {padding:10px;}
+#content #mail-content .mail-tray p {margin:0;}
+#content #mail-content .mail-list {width:100%; margin:5px 0; border-collapse:collapse;}
+#content #mail-content .mail-list tr {cursor:pointer;}
+#content #mail-content .mail-list td {height:20px; padding:3px 5px; overflow:hidden; vertical-align:middle;}
+#content #mail-content .mail-list td a {color:#000; text-decoration:none;}
+#content #mail-content .mail-list td .ico-att {position:relative; top:1px;}
+#content #mail-content .mail-list td .mail-preview {font-weight:normal;}
+#content #mail-content .mail-list tr.unread td.col-02, #content #mail-content .mail-list tr.unread td.col-03, #content #mail-content .mail-list tr.unread td.col-05 {font-weight:bold;}
+#content #mail-content .mail-list .col-01 {width:10px;}
+#content #mail-content .mail-list .col-02 {width:140px;}
+#content #mail-content .mail-list .col-03 {display:block; min-width:250px; width:expression(document.body.clientWidth < 250? "250px" : "auto" ); overflow:hidden;}
+#content #mail-content .mail-list .col-03 span {display:block; height:20px; overflow:hidden;}
+#content #mail-content .mail-list .col-04 {width:15px; text-align:center;}
+#content #mail-content .mail-list .col-05 {width:110px;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: LOGIN
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#sign #main {width:600px; margin:150px auto 0 auto;}
+#content #login {background:url("/layer_cake/images/ico-lock.png") 5px 17px no-repeat;}
+#content #reg {background:url("/layer_cake/images/ico-user.png") 10px 17px no-repeat;}
+#content #password {background:url("/layer_cake/images/ico-mail.png") 10px 17px no-repeat;}
+#content #login, #content #reg, #content #password {padding:10px 10px 10px 75px;}
+#content #login th, #content #reg th, #content #password th {vertical-align:middle; text-align:right;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: MESSAGES
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .msg {padding:15px 15px 15px 60px; font-size:120%;}
+#content .msg a:hover {text-decoration:none;}
+#content .msg.msg-warning {background:url("/layer_cake/images/ico-warning.png") 5px 50% no-repeat;}
+#content .msg.msg-ok {background:url("/layer_cake/images/ico-ok.png") 5px 50% no-repeat;}
+#content .msg.msg-error {background:url("/layer_cake/images/ico-error.png") 5px 50% no-repeat;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: PAGINATION
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .pagination {padding-bottom:5px;}
+#content .pagination.bottom {padding:0; border:0; padding-top:5px;}
+#content .pagination p {margin:0;}
+#content .pagination p.f-right a {padding:2px 4px;}
+#content .pagination p.f-right a.active {padding:2px 6px; text-decoration:none; font-weight:bold;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: LABELS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.label {padding:2px 11px 2px 5px; background:url("/layer_cake/images/label.gif") 100% 50% no-repeat; font-size:85%; font-weight:bold; text-transform:uppercase;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: BOX
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .box-01 {padding:10px;}
+#content .box-01 form {margin:0;}
+#content .box-01 h3 {margin:0 0 10px 0; padding:8px; font-size:100%; font-weight:bold;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TABS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content .ui-tabs .ui-tabs-nav li {display:inline;}
+#content .ui-tabs .ui-tabs-nav li a {display:block; float:left; margin-right:3px; padding:7px 10px;}
+#content .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {font-weight:bold; text-decoration:none;}
+#content .ui-tabs .ui-tabs-hide {display:none !important;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PORTLET: TOOLTIP
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#tooltip {position:absolute; display:block; background:url("/layer_cake/js/tooltip-left.gif") top left no-repeat;}
+#tooltiptop {display:block; height:5px; margin-left:5px; background:url("/layer_cake/js/tooltip-top.gif") top right no-repeat; overflow:hidden;}
+#tooltipcontent {display:block; padding:5px 10px 5px 5px; margin-left:5px; font-weight:bold; text-align:left !important;}
+#tooltipcontent img {display:block;}
+#tooltipbottom {display:block; height:5px; margin-left:5px; background:url("/layer_cake/js/tooltip-bottom.gif") top right no-repeat; overflow:hidden;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+OTHERS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+img.f-left {margin-right:15px;}
+img.f-right {margin-left:15px;}
+.bigger {font-size:120%;}
+.smaller {font-size:85%;}
